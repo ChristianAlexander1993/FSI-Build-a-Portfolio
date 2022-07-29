@@ -1,19 +1,42 @@
+@font-face {
+    font-family: Plavsky;
+    src: url("./fonts/Plavsky.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PlavskyItalic;
+    src: url("./fonts/Plavsky\ Italic.otf") format("opentype")
+}
+
+@font-face {
+    font-family: PlavskyBoldItalic;
+    src: url("./fonts/Plavsky\ Bold\ Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: PlavskyBold;
+    src: url("./fonts/Plavsky\ Bold.otf") format("opentype");
+}
+
 #showcase {
     background-image: url("../images/destiny-gundam.jpg");
-    width: 100%;
     background-position: center 37.5%;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     border: none;
     min-height: 500px;
     margin-bottom: 30px;
     text-align: center;
-    margin-right: 0;
-    margin-left: 0;
 }
 
 .main-container {
     height: calc(100vh - 220px);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #main-header {
@@ -21,21 +44,63 @@
     color: lightgray;
     position: fixed;
     width: 100%;
-    text-align: center;
+    background-size: cover;
+    text-align: left 20;
     top: 0;
-    left: 0;
+    font-family: "PlavskyBoldItalic", Fallback, sans-serif;
+    font-size: 15px;
 }
 
 body {
-    background-image: url("../images/stars-wallpaper.jpg");
-    color: white;
+    /* background-image: url("../images/stars-wallpaper.jpg"); */
+    color: black;
+    text-align: center;
+    font-family: "Plavsky", fallback, sans-serif;
+} 
+
+p {
+    font-family: "PlavskyItalic", Fallback, sans-serif;
+}
+
+img {
+    border-radius: 50%;
+    border: solid slateblue 2px;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+h3.list-container {
+    text-align: center;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.list-1 {
+    display: flex;
+}
+
+.list-1 ul {
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.list-1 li {
+    padding-bottom: 0px;
+    list-style-image: url("../images/Gundam-head-4.png");
 }
 
 .main-footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin-top: 40px;
     position: fixed;
     width: 100%;
