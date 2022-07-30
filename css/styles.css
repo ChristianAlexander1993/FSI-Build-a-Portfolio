@@ -1,102 +1,122 @@
 @font-face {
-    font-family: Plavsky;
-    src: url("./fonts/Plavsky.otf") format("opentype");
+  font-family: Plavsky;
+  src: url("./fonts/Plavsky.otf") format("opentype");
 }
 
 @font-face {
-    font-family: PlavskyItalic;
-    src: url("./fonts/Plavsky\ Italic.otf") format("opentype")
+  font-family: PlavskyItalic;
+  src: url("./fonts/Plavsky\ Italic.otf") format("opentype");
 }
 
 @font-face {
-    font-family: PlavskyBoldItalic;
-    src: url("./fonts/Plavsky\ Bold\ Italic.otf") format("opentype");
+  font-family: PlavskyBoldItalic;
+  src: url("./fonts/Plavsky\ Bold\ Italic.otf") format("opentype");
 }
 
 @font-face {
-    font-family: PlavskyBold;
-    src: url("./fonts/Plavsky\ Bold.otf") format("opentype");
+  font-family: PlavskyBold;
+  src: url("./fonts/Plavsky\ Bold.otf") format("opentype");
 }
 
 body {
-    margin: 0;
-    background-image: url("../images/stars-wallpaper.jpg");
-    background-size: cover;
-    color: black;
-    text-align: center;
-    font-family: "Plavsky", fallback, sans-serif;
-    color: white;
-} 
+  margin: 0;
+  background-image: url("../images/stars-wallpaper.jpg");
+  background-size: cover;
+  color: black;
+  text-align: center;
+  font-family: "Plavsky", fallback, sans-serif;
+  color: white;
+}
 
-#heading {
-    margin: 50px;
+#heading p {
+  margin: 50px;
+  font-size: 19px;
+  font-family: "PlavskyItalic", Fallback, sans-serif;
+}
+
+#heading h1 {
+  text-decoration: underline;
+  font-family: "PlavskyBoldItalic", Fallback, sans-serif;
+}
+
+h2 {
+  text-decoration: underline;
+  font-family: "PlavskyItalic", Fallback, sans-serif;
 }
 
 #portrait {
-    margin: 50px;
+  margin: 50px;
 }
 
 #showcase {
-    background-image: url("../images/destiny-gundam.jpg");
-    background-position: center 45%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    border: none;
-    min-height: 500px;
-    margin-bottom: 30px;
-    text-align: center;
+  background-image: url("../images/destiny-gundam.jpg");
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border: none;
+  min-height: 500px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .main-container {
-    height: calc(100vh - 220px);
-    display: flex;
-    width: 60%;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: calc(100vh - 220px);
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #main-header {
-    background-color: darkslateblue;
-    color: lightgray;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    padding: 1px;
-    font-family: "PlavskyBoldItalic", Fallback, sans-serif;
-    font-size: 15px;
-} 
+  background-color: darkslateblue;
+  color: lightgray;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding: 1px;
+  font-family: "PlavskyBoldItalic", Fallback, sans-serif;
+  font-size: 15px;
+}
 
-p {
-    font-family: "PlavskyItalic", Fallback, sans-serif;
-    color: white;
+#about p {
+  font-family: "PlavskyItalic", Fallback, sans-serif;
+  color: white;
+  font-size: 18px;
 }
 
 img {
-    border-radius: 50%;
-    border: solid slateblue 2px;
-    min-height: 300px;
-    min-width: 300px;
+  border-radius: 50%;
+  border: solid slateblue 2px;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+#about p {
+  text-align: center;
+  width: 65%;
+  margin-left: 18%;
 }
 
 .info {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #list-items {
-    padding-bottom: 0px;
-    list-style-image: url("../images/Gundam-head-4.png");
+  padding-bottom: 0px;
+  list-style-image: url("../images/Gundam-head-4.png");
 }
 
 .main-footer {
-    background: slateblue;
-    color: #fff;
-    text-align: center;
-    padding: 1px;
-    margin-top: 40px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-  }
+  background: slateblue;
+  color: #fff;
+  text-align: center;
+  padding: 1px;
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
