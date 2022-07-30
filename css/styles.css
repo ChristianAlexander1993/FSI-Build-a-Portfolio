@@ -18,9 +18,27 @@
     src: url("./fonts/Plavsky\ Bold.otf") format("opentype");
 }
 
+body {
+    margin: 0;
+    background-image: url("../images/stars-wallpaper.jpg");
+    background-size: cover;
+    color: black;
+    text-align: center;
+    font-family: "Plavsky", fallback, sans-serif;
+    color: white;
+} 
+
+#heading {
+    margin: 50px;
+}
+
+#portrait {
+    margin: 50px;
+}
+
 #showcase {
     background-image: url("../images/destiny-gundam.jpg");
-    background-position: center 37.5%;
+    background-position: center 45%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -33,8 +51,7 @@
 .main-container {
     height: calc(100vh - 220px);
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    width: 60%;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -42,24 +59,17 @@
 #main-header {
     background-color: darkslateblue;
     color: lightgray;
-    position: fixed;
+    position: relative;
     width: 100%;
     background-size: cover;
-    text-align: left 20;
-    top: 0;
+    padding: 1px;
     font-family: "PlavskyBoldItalic", Fallback, sans-serif;
     font-size: 15px;
-}
-
-body {
-    /* background-image: url("../images/stars-wallpaper.jpg"); */
-    color: black;
-    text-align: center;
-    font-family: "Plavsky", fallback, sans-serif;
 } 
 
 p {
     font-family: "PlavskyItalic", Fallback, sans-serif;
+    color: white;
 }
 
 img {
@@ -69,40 +79,23 @@ img {
     min-width: 300px;
 }
 
-h3.list-container {
-    text-align: center;
-}
-
-.list-container{
+.info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+    justify-content: space-evenly;
 }
 
-.list-1 {
-    display: flex;
-}
-
-.list-1 ul {
-    padding: 0;
-    padding-left: 20px;
-    list-style: square;
-    list-style: none;
-}
-
-.list-1 li {
+#list-items {
     padding-bottom: 0px;
     list-style-image: url("../images/Gundam-head-4.png");
 }
 
 .main-footer {
-    background: #333;
+    background: slateblue;
     color: #fff;
     text-align: center;
-    padding: 5px;
+    padding: 1px;
     margin-top: 40px;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     left: 0;
