@@ -109,6 +109,15 @@ img {
   list-style-image: url("../images/Gundam-head-4.png");
 }
 
+#ul-items a {
+  color: slateblue;
+}
+
+#ul-items a:hover {
+  color: palevioletred;
+  transition: color .3s ease-in-out;
+}
+
 .main-footer {
   background: slateblue;
   color: #fff;
@@ -119,4 +128,10 @@ img {
   width: 100%;
   bottom: 0;
   left: 0;
+}
+
+@media (max-width: 1000px) {
+   #showcase {
+    display: none;
+   }
 }
